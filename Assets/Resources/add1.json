@@ -1,0 +1,389 @@
+{
+    "tMachine": {
+        "owner": {
+            "id": "118030181"
+        },
+        "id": 3,
+        "description": "Adds 1 to a number.",
+        "collaborators": [],
+        "states": [
+            {
+                "name": "start",
+                "initialState": true,
+                "incomingTransitions": [
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "0",
+                        "writeValue": "0",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "1",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "2",
+                        "writeValue": "2",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "3",
+                        "writeValue": "3",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "4",
+                        "writeValue": "4",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "5",
+                        "writeValue": "5",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "6",
+                        "writeValue": "6",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "7",
+                        "writeValue": "7",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "8",
+                        "writeValue": "8",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": "9",
+                        "writeValue": "9",
+                        "moveValue": 1
+                    }
+                ],
+                "exitTransitions": [
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "0",
+                        "writeValue": "0",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "1",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "2",
+                        "writeValue": "2",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "3",
+                        "writeValue": "3",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "4",
+                        "writeValue": "4",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "5",
+                        "writeValue": "5",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "6",
+                        "writeValue": "6",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "7",
+                        "writeValue": "7",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "8",
+                        "writeValue": "8",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "start"
+                        },
+                        "readValue": "9",
+                        "writeValue": "9",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "sum"
+                        },
+                        "readValue": " ",
+                        "writeValue": " ",
+                        "moveValue": -1
+                    }
+                ]
+            },
+            {
+                "name": "sum",
+                "initialState": false,
+                "incomingTransitions": [
+                    {
+                        "originState": {
+                            "name": "start"
+                        },
+                        "readValue": " ",
+                        "writeValue": " ",
+                        "moveValue": -1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "9",
+                        "writeValue": "0",
+                        "moveValue": -1
+                    }
+                ],
+                "exitTransitions": [
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "0",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "1",
+                        "writeValue": "2",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "2",
+                        "writeValue": "3",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "3",
+                        "writeValue": "4",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "4",
+                        "writeValue": "5",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "5",
+                        "writeValue": "6",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "6",
+                        "writeValue": "7",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "7",
+                        "writeValue": "8",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": "8",
+                        "writeValue": "9",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "finish"
+                        },
+                        "readValue": " ",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    },
+                    {
+                        "targetState": {
+                            "name": "sum"
+                        },
+                        "readValue": "9",
+                        "writeValue": "0",
+                        "moveValue": -1
+                    }
+                ]
+            },
+            {
+                "name": "finish",
+                "initialState": false,
+                "incomingTransitions": [
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "0",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "1",
+                        "writeValue": "2",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "2",
+                        "writeValue": "3",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "3",
+                        "writeValue": "4",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "4",
+                        "writeValue": "5",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "5",
+                        "writeValue": "6",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "6",
+                        "writeValue": "7",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "7",
+                        "writeValue": "8",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": "8",
+                        "writeValue": "9",
+                        "moveValue": 1
+                    },
+                    {
+                        "originState": {
+                            "name": "sum"
+                        },
+                        "readValue": " ",
+                        "writeValue": "1",
+                        "moveValue": 1
+                    }
+                ],
+                "exitTransitions": []
+            }
+        ]
+    },
+    "input": "9999999",
+    "blank": " "
+}
