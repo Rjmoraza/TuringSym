@@ -103,10 +103,28 @@ namespace TuringSym.UI
             states.Add(stateGO.GetComponent<State>());
         }
 
+        /// <summary>
+        /// Renders one transition of the Machine
+        /// </summary>
+        /// <param name="transition">Transition to render</param>
         public void RenderTransition(Machine.Transition transition)
         {
             GameObject transitionGO = Instantiate(transitionPrefab, transform);
             transitionGO.GetComponent<Transition>().SetTransition(transition);
+        }
+
+        /// <summary>
+        /// Sends the current machine to the server to simulate
+        /// This is an asyncronous operation
+        /// TODO add Action success and Action error to TuringSym.Networking.ServerJandler.SimulateMachine
+        /// </summary>
+        public void Simulate()
+        {
+            if(machine != null)
+            {
+                // TODO process response
+                Networking.ServerHandler.SimulateMachine(machine);
+            }
         }
     }
 }
