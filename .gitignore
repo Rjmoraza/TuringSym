@@ -13,6 +13,10 @@ obj/
 Builds/
 Build/
 
+# Temp directory
+Temp/
+Tmp/
+
 # User settings
 UserSettings/
 
