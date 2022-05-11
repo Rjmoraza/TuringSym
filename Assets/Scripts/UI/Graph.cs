@@ -24,6 +24,7 @@ namespace TuringSym.UI
             rectTransform = GetComponent<RectTransform>();
             mainCamera = Camera.main;
             states = new List<State>();
+            transitions = new List<Transition>();
 
             // TODO TESTING
             // Load the test machine add1.json
@@ -70,6 +71,16 @@ namespace TuringSym.UI
             }
         }
 
+        public void CreateNewState()
+        {
+            nodeForm.ShowForm("New State", (string name) => {
+                if (machine != null)
+                {
+                    AddState(name, new Vector2(Random.Range(-400, 400), Random.Range(-200, 200)));
+                }
+            });
+        }
+
         /// <summary>
         /// Adds a new state to the machine
         /// </summary>
@@ -81,6 +92,7 @@ namespace TuringSym.UI
             GameObject stateGO = Instantiate(statePrefab, transform);
             stateGO.GetComponent<State>().SetState(state);
             stateGO.GetComponent<State>().SetPosition(position);
+            stateGO.GetComponent<RectTransform>().anchoredPosition = position;
             states.Add(stateGO.GetComponent<State>());
         }
 

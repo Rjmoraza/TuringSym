@@ -30,11 +30,6 @@ public class UILineRenderer : MaskableGraphic
         SetVerticesDirty();
     }
 
-    protected override void OnValidate()
-    {
-        SetVerticesDirty();
-    }
-
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         vh.Clear();

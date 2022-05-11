@@ -195,7 +195,7 @@ public class Machine
     #endregion
 
     #region Machine Serialization and Deserialization
-    public static Machine FromJSON(String json)
+    public static Machine FromJSON(string json)
     {
         Machine machine = JsonUtility.FromJson<Machine>(json);
         if(machine != null)

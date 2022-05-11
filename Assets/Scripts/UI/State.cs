@@ -121,6 +121,10 @@ namespace TuringSym.UI
             rectTransform.position = Input.mousePosition;
         }
 
+        public void OnClick()
+        {
+            print(state.name);
+        }
         
     }
 }
